@@ -12,7 +12,7 @@ const categoryIcons = {
 };
 
 async function request(path, options) {
-  const response = await fetch(path, {
+  const response = await fetch(`https://back-notes-q1j1.onrender.com${path}`, {
     headers: { 'Content-Type': 'application/json' },
     ...options,
   });
